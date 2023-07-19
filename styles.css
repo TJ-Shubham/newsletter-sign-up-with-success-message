@@ -40,7 +40,7 @@ button {
     font: inherit;
 }
 
-main {
+.form-display {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,7 +52,7 @@ main {
     height: 19.3rem;
     background-repeat: no-repeat;
     width: 100%;
-    background-size: cover;
+    background-size: 100%;
     border-bottom-left-radius: 1.2rem;
     border-bottom-right-radius: 1.2rem;
 }
@@ -64,7 +64,7 @@ main {
     padding: 1rem;
 }
 
-.hero-section h1 {
+.heading {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 0;
@@ -126,6 +126,37 @@ main {
     background: var(--btn-bg-color);
 }
 
+/* success message */
+
+.message-section {
+    padding: 0.5rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--White);
+}
+
+.message-display {
+    margin: 3rem 0;
+}
+
+.message-display img {
+    height: auto;
+}
+
+.email-id {
+    font-weight: 700;
+}
+
+.message-btn {
+    margin-bottom: 0;
+    margin-top: 8rem;
+}
+
+.message-section {
+    display: none;
+}
+
 /* media query */
 @media (min-width: 900px) {
 
@@ -133,25 +164,49 @@ main {
         background-color: var(--Dark-Slate-Grey);
         display: flex;
         justify-content: center;
-        padding: 3rem 1rem;
+        align-items: center;
+        height: 100vh;
     }
 
     main {
+        width: 65%;
+    }
+
+    .form-display {
         flex-direction: row-reverse;
         border-radius: 1.5rem;
-        padding: 1rem 1rem;
-        width: 60%;
+        padding: 1rem;
     }
 
     .hero-image {
         width: 50%;
-        background-image: url("assets/images/illustration-sign-up-desktop.svg");
-        background-size: cover;
-        height: 80vh;
+        background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+        height: 40rem;
         border-radius: 1rem;
     }
 
     .hero-section {
         width: 50%;
+        margin-right: 2rem;
+        padding: 0 1.5rem;
+    }
+
+    /* success message */
+
+    .message-section {
+
+        width: 40%;
+        padding: 2rem;
+        margin: 0 5rem;
+        height: 100%;
+        border-radius: 2rem;
+    }
+
+    .message-display {
+        margin: 0;
+    }
+
+    .message-btn {
+        margin-top: 2rem;
     }
 }
