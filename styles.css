@@ -40,70 +40,70 @@ button {
     font: inherit;
 }
 
-.form-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--White);
+.form-display,
+.message-section {
+  background-color: var(--White);
 }
 
 .hero-image {
-    background-image: url("assets/images/illustration-sign-up-mobile.svg");
-    height: 19.3rem;
+    background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+    height: 17.75rem;
     background-repeat: no-repeat;
-    width: 100%;
-    background-size: 100%;
-    border-bottom-left-radius: 1.2rem;
-    border-bottom-right-radius: 1.2rem;
+    background-size: cover;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
 }
 
 .hero-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 1rem;
+    padding: 1em;
 }
 
 .heading {
     font-size: 2.5rem;
     font-weight: 700;
+    margin-top: 0.3em;
     margin-bottom: 0;
 }
 
 .hero-list {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 1rem;
+    margin: 0.4em;
 }
 
 .hero-list img {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 .hero-list p {
     margin: 0;
+    padding: 0;
 }
+
 
 .hero-form {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 1.9em;
 }
 
 .label-display {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 0.2rem;
+    padding: 0 0.2em;
     font-weight: 700;
     font-size: 0.8rem;
 }
 
 #email {
-    height: 3.5rem;
-    padding: 0 1.5rem;
+    height: 3.3rem;
+    padding: 0 1.5em;
     border-radius: 0.5rem;
     border: 1px solid var(--Grey);
     cursor: pointer;
@@ -115,13 +115,14 @@ button {
 }
 
 .btn {
-    height: 3.5rem;
+    height: 3.3rem;
+    width: 100%;
     border-radius: 0.5rem;
     border: none;
     background: var(--Dark-Slate-Grey);
     color: var(--White);
     font-weight: 700;
-    margin: 1rem 0;
+    margin: 1em 0;
     cursor: pointer;
 }
 
@@ -133,28 +134,22 @@ button {
 /* success message */
 
 .message-section {
-    padding: 0.5rem 1.3rem;
+    padding: 0.5em 1.3em;
     display: flex;
     flex-direction: column;
     background-color: var(--White);
 }
 
 .message-display {
-    margin: 3rem 0;
+    margin: 9.25em 0 16.62em;
 }
 
 .message-display img {
-    height: auto;
+    height: 100%;
 }
 
 .email-id {
     font-weight: 700;
-}
-
-.message-btn {
-    margin-bottom: 0;
-    margin-top: 10em;
-    width: 100%;
 }
 
 .message-section {
@@ -181,31 +176,31 @@ button {
 @media (min-width: 900px) {
 
     body {
-        background-color: var(--Dark-Slate-Grey);
+        background-color: var(--Charcoal-Grey);
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
     }
 
-    main {
-        width: 65%;
-    }
-
     .form-display {
+        height: 40rem;
+        width: 58.12rem;
+        display: flex;
         flex-direction: row-reverse;
-        border-radius: 1.5rem;
         padding: 1rem;
+        border-radius: 2rem;
     }
 
     .hero-image {
-        width: 50%;
+        width: 45%;
         background-image: url("/assets/images/illustration-sign-up-desktop.svg");
-        height: 40rem;
+        height: 100%;
         border-radius: 1rem;
     }
 
     .hero-section {
+        justify-content: center;
         width: 50%;
         margin-right: 2rem;
         padding: 0 1.5rem;
@@ -214,11 +209,11 @@ button {
     /* success message */
 
     .message-section {
-
-        width: 40%;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
         padding: 2em;
-        margin: 0 15em;
-        height: 100%;
+        margin: 0 auto;
         border-radius: 2rem;
     }
 
