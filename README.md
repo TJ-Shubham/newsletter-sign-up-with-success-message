@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Link](https://github.com/TJ-Shubham/newsletter-sign-up-with-success-message)
-- Live Site URL: [Link]([https://your-live-site-url.com](https://tj-shubham.github.io/newsletter-sign-up-with-success-message/))
+- Live Site URL: [Link](https://tj-shubham.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
 
