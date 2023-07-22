@@ -46,7 +46,7 @@ button {
 }
 
 .hero-image {
-    background-image: url("/assets/images/illustration-sign-up-mobile.svg");
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
     height: 17.75rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,7 +194,7 @@ button {
 
     .hero-image {
         width: 45%;
-        background-image: url("/assets/images/illustration-sign-up-desktop.svg");
+        background-image: url("./assets/images/illustration-sign-up-desktop.svg");
         height: 100%;
         border-radius: 1rem;
     }
