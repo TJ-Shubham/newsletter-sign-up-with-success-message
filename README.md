@@ -48,6 +48,7 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Used media query
+- Dom Manipulation 
 
 
 ### What I learned
